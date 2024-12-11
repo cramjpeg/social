@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            background-image: url('https://i.pinimg.com/736x/51/b2/a0/51b2a05f1f11115489e144a931d5caf1.jpg');
+            background-size: cover; /* Ensures the background covers the entire screen */
+            background-position: center; /* Centers the background image */
+            background-attachment: fixed; /* Keeps the background fixed during scrolling */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 70px;
+            text-align: center;
+            z-index: 1; /* Ensures text is above the background */
+        }
+        .anaglyph {
+            position: relative;
+            color: magenta;
+            text-shadow: -2px 0 cyan, 2px 0 yellow;
+            font-weight: bold;
+            font-size: 32px;
+        }
+        .bottom-left-link {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 16px;
+            z-index: 1; /* Ensures the link is above the background */
+        }
+        .bottom-left-link a {
+            color: blue;
+            text-decoration: none;
+        }
+        .bottom-left-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <span class="anaglyph">Amusement</span>
+        <span class="anaglyph">Forcefulness</span>
+        <span class="anaglyph">Perception</span>
+        <span class="anaglyph">Trending</span>
+        <span class="anaglyph">Insincere</span>
+        <span class="anaglyph">Unethical</span>
+        <span class="anaglyph">Portraying</span>
+        <span class="anaglyph">Invasion</span>
+        <span class="anaglyph">Lucrative</span>
+    </div>
+   <div class="bottom-left-link">
+        <a href="page2.html">Go to Page 2</a>
+    </div>
+</body>
+</html>
